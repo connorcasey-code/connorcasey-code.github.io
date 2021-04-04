@@ -1,3 +1,13 @@
 #italic {
     font-style: italic;
 }
+
+#center-text {
+    text-align: center;
+    text-decoration: underline;
+}
+
+#big-text {
+    font-size: larger;
+    font-weight: bolder;
+}

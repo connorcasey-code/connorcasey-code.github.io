@@ -1,7 +1,8 @@
 body {
     background-color: black;
-    background-image: url("https://papers.co/wallpaper/papers.co-sg08-green-ray-wood-light-gradation-blur-36-3840x2400-4k-wallpaper.jpg");
-    background-repeat: no-repeat;
+    /* background-image: url("https://papers.co/wallpaper/papers.co-sg08-green-ray-wood-light-gradation-blur-36-3840x2400-4k-wallpaper.jpg"); */
+    background-image: url("https://cdn.crispedge.com/68be8d.webp");
+    /* background-repeat: no-repeat; */
 }
 
 * {
@@ -9,6 +10,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     position: relative;
+    color: whitesmoke;
   }
 
 .grand-container {
@@ -17,29 +19,147 @@ body {
 
 .banner-div {
     margin: 3%;
+    margin-bottom: 1%;
     background-color: rgba(0,0,0,0.93);
     border: 1px solid black;
     border-radius: 30px;
-    /* height: 500px; */
-    color: whitesmoke;
     text-align: center;
+    position: relative;
+    animation-name: slide-down;
+    animation-duration: 1s;
+}
+
+.contact-buttons-div {
+    margin-top: 3%;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: whitesmoke;
+    border-radius: 30px;
+}
+
+.contact-buttons-div > span > a {
+    color: whitesmoke
+}
+
+#contact-button {
+    height: 35px;
+    width: 35px;
+    margin: 1%;
+    /* border-radius: 30px; */
+    /* background-color: whitesmoke; */
 }
 
 .first-div-stacks {
-    background-color: blueviolet;
-    height: 500px;
+    margin-left: 3%;
+    margin-right: 3%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    text-align: center;
 }
 
 .left-fe-stack {
-    /* height: 45%; */
-    margin: 3%;
-    background-color: red;
+    margin-right: 3%;
+    background-color: rgba(0,0,0,0.93);
+    border: 1px solid black;
+    border-radius: 30px;
+    text-align: left;
+    animation-name: slide-right;
+    animation-duration: 1s;
+}
+
+#fe-list {
+    margin-left: 9%;
 }
 
 .right-be-stack {
-    /* height: 45%; */
+    margin-left: 3%;
+    background-color: rgba(0,0,0,0.93);
+    border: 1px solid black;
+    border-radius: 30px;
+    text-align: left;
+    animation-name: slide-left;
+    animation-duration: 1s;
+}
+
+#be-list {
+    margin-left: 9%;
+}
+
+.second-div-projects {
     margin: 3%;
-    background-color: greenyellow;
+    margin-top: 1%;
+    margin-bottom: 0%;
+    background-color: rgba(0,0,0,0.93);
+    border: 1px solid black;
+    border-radius: 30px;
+    height: 700px;
+    animation-name: slide-up;
+    animation-duration: 1s;
+}
+
+#hover-note {
+    text-align: center;
+    font-style: italic;
+}
+
+@media only screen and (min-width:920px) {
+    .grand-container {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .second-div-projects {
+        height: 400px;
+    }
+
+    .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        text-align: center;
+    }
+}
+
+
+#project-card {
+    margin: 5%;
+    margin-top: 0%;
+    /* border: 1px solid white; */
+    border-radius: 30px;
+    height: 150px;
+}
+
+.third-div-info {
+    margin: 3%;
+    margin-top: 1%;
+    background-color: rgba(0,0,0,0.93);
+    border: 1px solid black;
+    border-radius: 30px;
+    animation-name: slide-up;
+    animation-duration: 1s;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+}
+
+.info-college > p {
+    margin-bottom: 0px;
+}
+
+.info-training {
+    margin: 1px;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+
+.info-training > p {
+    margin-bottom: 0px;
+}
+
+.info-interests > p {
+    margin-bottom: 0px;
 }

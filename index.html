@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/mystylesheet.css">
     <link rel="stylesheet" href="./styles/basics.css">
+    <link rel="stylesheet" href="./styles/animations.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"  
       rel="stylesheet" 
       integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" 
@@ -13,22 +14,175 @@
   </head>
   <body>
     <div class="grand-container">
+
       <div class="banner-div">
         <br>
         <h1>Connor Casey</h1>
-        <h4 id="italic">Software Engineer | Washington, DC</h4>
-
-        <br>
+        <h4 id="italic">Software Engineer | Washington DC</h4>
+        <div class="contact-buttons-div">
+          <span>
+            <a href="https://github.com/connorcasey-code" target="_blank">
+              <img id="contact-button" src="./images/iconfinder_github_317712.png" alt="github"/>
+            </a>
+          </span>
+          <span>
+            <a href="https://www.linkedin.com/in/connor-casey-2b945a133" target="_blank">
+              <img id="contact-button" src="./images/iconfinder_Circled_Linkedin_svg_5279114.png" alt="linkedin"/>
+            </a>
+          </span>
+          <span>
+            <a href="mailto:connorcaseyc@gmail.com">
+              <img id="contact-button" src="./images/iconfinder_mail_email_envelope_send_message_1011335.png" alt="email">
+            </a>
+          </span>
+        </div>
+        <br><br>
       </div>
 
       <div class="first-div-stacks">
         <div class="left-fe-stack">
-          
+          <br>
+          <h3 id="center-text">Front-End</h3>
+          <ul id="fe-list">
+            <li>Angular</li>
+            <li>React</li>
+            <li>TypeScript</li>
+            <li>JavaScript</li>
+            <li>NodeJS</li>
+            <li>Express</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Bootstrap</li>
+            <li>Reactstrap</li>
+          </ul>
         </div>
 
         <div class="right-be-stack">
+          <br>
+          <h3 id="center-text">Back-End</h3>
+          <ul id="be-list">
+            <li>Java</li>
+            <li>Spring Framework</li>
+            <ul>
+              <li>Boot</li>
+              <li>Data</li>
+              <li>MVC</li>
+              <li>AOP</li>
+              <li>Security</li>
+            </ul>
+            <li>Maven</li>
+            <li>Microservices</li>
+            <li>SQL</li>
+            <li>PostgreSQL</li>
+            <li>MongoDB</li>
+          </ul>
+          <br>
+        </div>
+      </div>
+
+      <div class="second-div-projects">
+        <div class="projects-title">
+          <br>
+          <h3 id="center-text">Projects</h3>
+          <p id="hover-note">(Tap or Hover for Details)</p>
+          <br>
+        </div>
+
+        <div class="projects-grid">
+          <div class="project-one-div" id="project-card">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <br>
+                  <p id="big-text">1. Financial Services Web Application - Client: KJFiSo</p>
+                  <br>
+                </div>
+                <div class="flip-card-back">
+                  <p>- Tech Stack: React, Java, PostgreSQL</p>
+                  <p>- Developed from scratch a platform for users to quote themselves & complete an application for 
+                    health insurance</p>
+                  <p>- Implemented Spring Security to authenticate and authorize users so they may manage 
+                    their portfolio</p>
+                  <p>- <a href="https://www.kjfiso.com" style="color: white;">Link</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-one-div" id="project-card">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <br>
+                  <p id="big-text">2. Task Manager - MEAN Stack Application</p>
+                  <br>
+                </div>
+                <div class="flip-card-back">
+                  <p>- Tech Stack: MongoDB, Express, Angular, NodeJS (MEAN)</p>
+                  <p>- Developed a personal project that allows users to manage task lists and their items</p>
+                  <p>- By utilizing the MEAN Stack architecture users can create lists, add items to an list, 
+                    update or delete items, and delete lists once they have completed all of their required tasks</p>
+                  <p>- <a href="https://github.com/connorcasey-code/task-manager" style="color: white;">Link</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-three-div" id="project-card">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <br>
+                  <p id="big-text">3. Reservation Management System - Microservices Platform</p>
+                  <br>
+                </div>
+                <div class="flip-card-back">
+                  <!-- <h1>John Doe</h1>
+                  <p>Architect & Engineer</p>
+                  <p>We love that guy</p> -->
+                  <p>- Tech Stack: Angular, Java, MySQL</p>
+                  <p>- Within a training program collaborated with my team to implement a Microservices Architecture 
+                    for a platform that allows businesses to manage resource allocations during daily operations</p>
+                  <p>- Utilized the Spring Framework to configure and integrate each service for our application</p>
+                </div>
+              </div>
+            </div>
+          </div>
 
         </div>
+
+        <br>
+      </div>
+      
+      <div class="third-div-info">
+        <div class="info-title">
+          <br>
+          <h3 id="center-text">Info</h3>
+          <br>
+        </div>
+
+        <div class="info-grid">
+          <div class="info-college">
+            <h4>Education:</h4>
+            <p>- University of Colorado at Boulder</p>
+            <p>- Bachelor's in Econmics</p>
+          </div>
+
+          <div class="info-training">
+            <h4>Training:</h4>
+            <p>- Revature Full Stack Java Path</p>
+            <p>- Awarded Most Valuable Programmer(MVP)</p>
+          </div>
+
+          <div class="info-interests">
+            <h4>Interests:</h4>
+            <p>- Building Computers</p>
+            <p>- Playing Piano</p>
+          </div>
+          <br>
+          <br>
+        </div>
+
       </div>
 
     </div>
